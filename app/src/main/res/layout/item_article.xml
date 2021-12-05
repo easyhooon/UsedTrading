@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
     <TextView
-        android:id="@+id/priceTextView"
+        android:id="@+id/contentTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"

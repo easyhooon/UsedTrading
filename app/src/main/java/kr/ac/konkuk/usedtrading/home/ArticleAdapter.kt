@@ -23,7 +23,7 @@ class ArticleAdapter(val onItemClicked: (ArticleModel) -> Unit): ListAdapter<Art
             //simpleDateFormat을 통해 포매팅 완성
             binding.titleTextView.text = articleModel.title
             binding.dateTextView.text = format.format(date).toString()
-            binding.priceTextView.text = articleModel.content
+            binding.contentTextView.text = articleModel.content
 
             //glide 사용
             if(articleModel.imageUrl.isNotEmpty()){
