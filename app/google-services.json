@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "883899707227",
+    "project_id": "usedtrading-f865d",
+    "storage_bucket": "usedtrading-f865d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883899707227:android:b7ebca8054ea6217fdb47e",
+        "android_client_info": {
+          "package_name": "kr.ac.konkuk.usedtrading"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883899707227-haerdt9dsp0mrmig1jcog6n40mlsaj2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxcnclAfZftqp_rTaEeQBp58IqZpWppLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883899707227-haerdt9dsp0mrmig1jcog6n40mlsaj2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
