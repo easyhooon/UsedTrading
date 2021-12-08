@@ -5,12 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import kr.ac.konkuk.usedtrading.databinding.ItemArticleBinding
 import kr.ac.konkuk.usedtrading.databinding.ItemChatListBinding
-import kr.ac.konkuk.usedtrading.home.ArticleModel
-import java.text.SimpleDateFormat
-import java.util.*
 
 class ChatListAdapter(val onItemClicked: (ChatListItem) -> Unit): ListAdapter<ChatListItem, ChatListAdapter.ViewHolder>(diffUtil){
     inner class ViewHolder(private val binding: ItemChatListBinding): RecyclerView.ViewHolder(binding.root) {

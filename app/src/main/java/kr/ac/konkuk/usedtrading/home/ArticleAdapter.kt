@@ -1,6 +1,5 @@
 package kr.ac.konkuk.usedtrading.home
 
-
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -26,9 +25,10 @@ class ArticleAdapter(val onItemClicked: (ArticleModel) -> Unit): ListAdapter<Art
             binding.contentTextView.text = articleModel.content
 
             //glide 사용
-            if(articleModel.imageUrl.isNotEmpty()){
+            if(articleModel.imageUrlList.isNotEmpty()){
                 Glide.with(binding.thumbnailImageView)
-                    .load(articleModel.imageUrl)
+                        // 첫번째 이미지만 보이도록
+                    .load(articleModel.imageUrlList.first())
                     .into(binding.thumbnailImageView)
             }
             binding.root.setOnClickListener {
@@ -38,7 +38,7 @@ class ArticleAdapter(val onItemClicked: (ArticleModel) -> Unit): ListAdapter<Art
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        //context는 parent에 있다
+        //context 는 parent 에 있다
         return ViewHolder(ItemArticleBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
 

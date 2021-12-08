@@ -10,4 +10,7 @@
     <color name="gray_cc">#CCCCCC</color>
     <color name="gray_ec">#ECECEC</color>
     <color name="orange">#F27F35</color>
+
+    <color name="black_24">#3D000000</color>
+
 </resources>
